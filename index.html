@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasant Jevengekar - Full Stack Developer Portfolio</title>
+    <meta name="description" content="Vasant Jevengekar - Full Stack Developer specializing in React.js, Next.js, and modern web technologies">
+    <meta name="keywords" content="Vasant Jevengekar, full stack developer, React.js, Next.js, web developer, portfolio">
+    <meta name="author" content="Vasant Jevengekar">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Vasant Jevengekar - Full Stack Developer">
+    <meta property="og:description" content="Building reliable and scalable web applications with React.js, Next.js, and modern technologies">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <div class="loading-spinner"></div>
+                <h2>VJ</h2>
+            </div>
+            <p>Launching something amazing...</p>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- Animated Background -->
+    <div class="animated-background">
+        <div class="floating-blob blob-1"></div>
+        <div class="floating-blob blob-2"></div>
+        <div class="floating-blob blob-3"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">VJ</span>
+                <div class="logo-glow"></div>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" data-section="home">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hi, I'm</span>
+                        <span class="name">Vasant Jevengekar</span>
+                    </h1>
+                    <div class="hero-subtitle">
+                        <span class="typing-text">I build reliable and scalable web applications using React.js, Next.js, Supabase, MongoDB, and TypeScript.</span>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn-primary" id="getInTouchBtn">
+                            <span>Get In Touch</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                        <button class="btn-secondary" id="resumeBtn">
+                            <span>Resume</span>
+                            <i class="fas fa-download"></i>
+                        </button>
+                        <button class="btn-secondary" id="cvBtn">
+                            <span>CV</span>
+                            <i class="fas fa-file-alt"></i>
+                        </button>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://linkedin.com" target="_blank" class="social-link" data-tooltip="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                            <div class="social-glow"></div>
+                        </a>
+                        <a href="https://github.com" target="_blank" class="social-link" data-tooltip="GitHub">
+                            <i class="fab fa-github"></i>
+                            <div class="social-glow"></div>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="social-link" data-tooltip="Instagram">
+                            <i class="fab fa-instagram"></i>
+                            <div class="social-glow"></div>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="social-link" data-tooltip="Twitter">
+                            <i class="fab fa-twitter"></i>
+                            <div class="social-glow"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="developer-illustration">
+                        <div class="code-window">
+                            <div class="window-header">
+                                <div class="window-controls">
+                                    <span class="control red"></span>
+                                    <span class="control yellow"></span>
+                                    <span class="control green"></span>
+                                </div>
+                                <span class="window-title">portfolio.js</span>
+                            </div>
+                            <div class="code-content">
+                                <div class="code-line"><span class="keyword">const</span> <span class="variable">developer</span> = {</div>
+                                <div class="code-line">  <span class="property">name</span>: <span class="string">"Vasant Jevengekar"</span>,</div>
+                                <div class="code-line">  <span class="property">skills</span>: [<span class="string">"React"</span>, <span class="string">"Next.js"</span>, <span class="string">"TypeScript"</span>],</div>
+                                <div class="code-line">  <span class="property">passion</span>: <span class="string">"Building amazing things"</span>,</div>
+                                <div class="code-line">  <span class="property">status</span>: <span class="string">"Available for work"</span></div>
+                                <div class="code-line">};</div>
+                            </div>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="float-element element-1">React</div>
+                            <div class="float-element element-2">Next.js</div>
+                            <div class="float-element element-3">Node.js</div>
+                            <div class="float-element element-4">TypeScript</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <div class="avatar-glow"></div>
+                            <div class="avatar-content">
+                                <img src="images/Vasant.jpeg" alt="Vasant Jevengekar" class="profile-photo">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-text">
+                        <h3>Web Developer & Designer</h3>
+                        <p>
+                            I'm a web developer and designer with a passion for creating elegant solutions to complex problems. With expertise in React, Next.js, and modern web technologies, I build responsive and accessible web applications that make a difference.
+                        </p>
+                        <p>
+                            As an aspiring full-stack developer, I've been actively building my skills through self-driven projects, internships, and continuous learning. I have successfully completed internships at Course Central, Alfido Tech, Codectechnologies, Codveda Technologies, InternCourse, and CodeAlpha, where I gained practical exposure to real-world projects and collaborative workflows.
+                        </p>
+
+                        <div class="internship-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-briefcase"></i>
+                                <span>6+ Internships Completed</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-code"></i>
+                                <span>Real-world Project Experience</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-users"></i>
+                                <span>Collaborative Workflow Expert</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="skills-content">
+                <div class="technical-skills">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="92">
+                            <div class="skill-header">
+                                <span class="skill-name">Frontend Development</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 92%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-skill="95">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML & CSS</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-skill="88">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript & TypeScript</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-skill="90">
+                            <div class="skill-header">
+                                <span class="skill-name">React & Next.js</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-skill="94">
+                            <div class="skill-header">
+                                <span class="skill-name">Responsive Design</span>
+                                <span class="skill-percentage">94%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 94%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-skill="87">
+                            <div class="skill-header">
+                                <span class="skill-name">UI/UX Design</span>
+                                <span class="skill-percentage">87%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 87%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item" data-skill="89">
+                            <div class="skill-header">
+                                <span class="skill-name">Git and GitHub</span>
+                                <span class="skill-percentage">89%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 89%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services">
+                    <h3>Services</h3>
+                    <div class="services-grid">
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h4>Frontend Development</h4>
+                            <p>Building responsive and interactive user interfaces with modern frameworks</p>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <h4>Full Stack Development</h4>
+                            <p>End-to-end web application development from database to deployment</p>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h4>UI/UX Design</h4>
+                            <p>Creating beautiful and user-centered design experiences</p>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4>Responsive Website Design</h4>
+                            <p>Ensuring perfect functionality across all devices and screen sizes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>
+                        Looking for a developer who builds fast, clean, and scalable products?
+                    </p>
+                    <p>
+                        If you have an opportunity that deserves someone who actually delivers
+                    </p>
+                    <p class="cta-text">
+                        Let's Talk
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>vasant.jevengekar@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 XXXXXXXXXX</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Mumbai, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Name</label>
+                            <div class="input-glow"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                            <div class="input-glow"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone">
+                            <label for="phone">Phone Number</label>
+                            <div class="input-glow"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Message</label>
+                            <div class="input-glow"></div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                            <div class="btn-glow"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Vasant Jevengekar. All rights reserved.</p>
+                <p>Built with ❤️ and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/scroll-effects.js"></script>
+</body>
+</html>
